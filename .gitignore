@@ -1,0 +1,10 @@
+.local/
+.settings/
+.project/
+.entities/
+.objects/
+.templates/
+.tmh/
+Data/config.xlsx
+Data/SSO_Verification_Report.xlsx
+*.dll

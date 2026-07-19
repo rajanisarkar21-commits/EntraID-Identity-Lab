@@ -1,0 +1,581 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "5cb69356-e5ba-4938-9d0a-b42716e8fc0f",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "Out_DT": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "in_TenantId": {
+            "type": "string"
+          },
+          "in_ClientSecret": {
+            "type": "string"
+          },
+          "in_ClientId": {
+            "type": "string"
+          },
+          "in_DomainSuffix": {
+            "type": "string"
+          },
+          "out_User": {
+            "type": "object",
+            "properties": {
+              "Id": {
+                "type": "string"
+              },
+              "ODataType": {
+                "type": "string"
+              },
+              "UserType": {
+                "type": "string"
+              },
+              "UserPrincipalName": {
+                "type": "string"
+              },
+              "UsageLocation": {
+                "type": "string"
+              },
+              "Mail": {
+                "type": "string"
+              },
+              "LegalAgeGroupClassification": {
+                "type": "string"
+              },
+              "JobTitle": {
+                "type": "string"
+              },
+              "FirstName": {
+                "type": "string"
+              },
+              "MailNickname": {
+                "type": "string"
+              },
+              "DisplayName": {
+                "type": "string"
+              },
+              "Country": {
+                "type": "string"
+              },
+              "CompanyName": {
+                "type": "string"
+              },
+              "City": {
+                "type": "string"
+              },
+              "AccountEnabled": {
+                "type": "boolean"
+              },
+              "Department": {
+                "type": "string"
+              },
+              "MobilePhone": {
+                "type": "string"
+              },
+              "LastName": {
+                "type": "string"
+              },
+              "StreetAddress": {
+                "type": "string"
+              },
+              "State": {
+                "type": "string"
+              },
+              "PreferredLanguage": {
+                "type": "string"
+              },
+              "OfficeLocation": {
+                "type": "string"
+              },
+              "PostalCode": {
+                "type": "string"
+              },
+              "OnPremisesUserPrincipalName": {
+                "type": "string"
+              },
+              "OnPremisesDistinguishedName": {
+                "type": "string"
+              },
+              "OnPremisesSamAccountName": {
+                "type": "string"
+              },
+              "OnPremisesDomainName": {
+                "type": "string"
+              },
+              "OnPremisesSecurityIdentifier": {
+                "type": "string"
+              },
+              "BusinessPhone": {
+                "type": "string"
+              },
+              "OnPremisesSyncEnabled": {
+                "type": "boolean"
+              },
+              "OnPremisesLastSyncDateTime": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Out_userList": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "Out_CreatedUsers": {
+            "type": "object",
+            "properties": {
+              "Id": {
+                "type": "string"
+              },
+              "ODataType": {
+                "type": "string"
+              },
+              "UserType": {
+                "type": "string"
+              },
+              "UserPrincipalName": {
+                "type": "string"
+              },
+              "UsageLocation": {
+                "type": "string"
+              },
+              "Mail": {
+                "type": "string"
+              },
+              "LegalAgeGroupClassification": {
+                "type": "string"
+              },
+              "JobTitle": {
+                "type": "string"
+              },
+              "FirstName": {
+                "type": "string"
+              },
+              "MailNickname": {
+                "type": "string"
+              },
+              "DisplayName": {
+                "type": "string"
+              },
+              "Country": {
+                "type": "string"
+              },
+              "CompanyName": {
+                "type": "string"
+              },
+              "City": {
+                "type": "string"
+              },
+              "AccountEnabled": {
+                "type": "boolean"
+              },
+              "Department": {
+                "type": "string"
+              },
+              "MobilePhone": {
+                "type": "string"
+              },
+              "LastName": {
+                "type": "string"
+              },
+              "StreetAddress": {
+                "type": "string"
+              },
+              "State": {
+                "type": "string"
+              },
+              "PreferredLanguage": {
+                "type": "string"
+              },
+              "OfficeLocation": {
+                "type": "string"
+              },
+              "PostalCode": {
+                "type": "string"
+              },
+              "OnPremisesUserPrincipalName": {
+                "type": "string"
+              },
+              "OnPremisesDistinguishedName": {
+                "type": "string"
+              },
+              "OnPremisesSamAccountName": {
+                "type": "string"
+              },
+              "OnPremisesDomainName": {
+                "type": "string"
+              },
+              "OnPremisesSecurityIdentifier": {
+                "type": "string"
+              },
+              "BusinessPhone": {
+                "type": "string"
+              },
+              "OnPremisesSyncEnabled": {
+                "type": "boolean"
+              },
+              "OnPremisesLastSyncDateTime": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "out_AdminUserId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "x-default-expression": "New List(of String)"
+          },
+          "in_AdminRoleName": {
+            "type": "string"
+          },
+          "in_TargetGroupName": {
+            "type": "string"
+          },
+          "TargetGroupName": {
+            "type": "string"
+          },
+          "out_Gropuname": {
+            "type": "boolean"
+          },
+          "out_TargetGroup": {
+            "type": "object",
+            "properties": {
+              "Id": {
+                "type": "string"
+              },
+              "ODataType": {
+                "type": "string"
+              },
+              "GroupType": {
+                "enum": [
+                  "Security",
+                  "Office365",
+                  "MailEnabledSecurityGroup",
+                  "DistributionGroup",
+                  "None"
+                ]
+              },
+              "MembershipType": {
+                "enum": [
+                  "Assigned",
+                  "Dynamic"
+                ]
+              },
+              "Classification": {
+                "type": "string"
+              },
+              "CreatedDateTime": {
+                "$ref": "#/$defs/nullableOfDateTimeOffset"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "DisplayName": {
+                "type": "string"
+              },
+              "Mail": {
+                "type": "string"
+              },
+              "MailEnabled": {
+                "type": "boolean"
+              },
+              "MailNickname": {
+                "type": "string"
+              },
+              "OnPremisesSecurityIdentifier": {
+                "type": "string"
+              },
+              "PreferredDataLocation": {
+                "type": "string"
+              },
+              "ProxyAddresses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "RenewedDateTime": {
+                "$ref": "#/$defs/nullableOfDateTimeOffset"
+              },
+              "SecurityEnabled": {
+                "type": "boolean"
+              },
+              "Visibility": {
+                "type": "string"
+              },
+              "OnPremisesSyncEnabled": {
+                "type": "boolean"
+              },
+              "OnPremisesLastSyncDateTime": {
+                "$ref": "#/$defs/nullableOfDateTimeOffset"
+              }
+            },
+            "$defs": {
+              "nullableOfDateTimeOffset": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "out_UserExists": {
+            "type": "boolean"
+          },
+          "out_ISAlreadyMember": {
+            "type": "boolean"
+          },
+          "out_ISAlreadyStandardMember": {
+            "type": "boolean"
+          },
+          "out_IsRoleExist": {
+            "type": "boolean"
+          },
+          "out_TokenResponseJsonContent": {
+            "type": "object",
+            "properties": {
+              "StatusCode": {
+                "enum": [
+                  "Continue",
+                  "SwitchingProtocols",
+                  "Processing",
+                  "EarlyHints",
+                  "OK",
+                  "Created",
+                  "Accepted",
+                  "NonAuthoritativeInformation",
+                  "NoContent",
+                  "ResetContent",
+                  "PartialContent",
+                  "MultiStatus",
+                  "AlreadyReported",
+                  "IMUsed",
+                  "MultipleChoices",
+                  "Ambiguous",
+                  "MovedPermanently",
+                  "Moved",
+                  "Found",
+                  "Redirect",
+                  "SeeOther",
+                  "RedirectMethod",
+                  "NotModified",
+                  "UseProxy",
+                  "Unused",
+                  "TemporaryRedirect",
+                  "RedirectKeepVerb",
+                  "PermanentRedirect",
+                  "BadRequest",
+                  "Unauthorized",
+                  "PaymentRequired",
+                  "Forbidden",
+                  "NotFound",
+                  "MethodNotAllowed",
+                  "NotAcceptable",
+                  "ProxyAuthenticationRequired",
+                  "RequestTimeout",
+                  "Conflict",
+                  "Gone",
+                  "LengthRequired",
+                  "PreconditionFailed",
+                  "RequestEntityTooLarge",
+                  "RequestUriTooLong",
+                  "UnsupportedMediaType",
+                  "RequestedRangeNotSatisfiable",
+                  "ExpectationFailed",
+                  "MisdirectedRequest",
+                  "UnprocessableEntity",
+                  "UnprocessableContent",
+                  "Locked",
+                  "FailedDependency",
+                  "UpgradeRequired",
+                  "PreconditionRequired",
+                  "TooManyRequests",
+                  "RequestHeaderFieldsTooLarge",
+                  "UnavailableForLegalReasons",
+                  "InternalServerError",
+                  "NotImplemented",
+                  "BadGateway",
+                  "ServiceUnavailable",
+                  "GatewayTimeout",
+                  "HttpVersionNotSupported",
+                  "VariantAlsoNegotiates",
+                  "InsufficientStorage",
+                  "LoopDetected",
+                  "NotExtended",
+                  "NetworkAuthenticationRequired"
+                ]
+              },
+              "TextContent": {
+                "type": "string"
+              },
+              "BinaryContent": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                }
+              },
+              "File": {
+                "$ref": "#/definitions/job-attachment"
+              },
+              "Headers": {
+                "$ref": "#/$defs/arrayOfKeyValuePairOfStringAndString"
+              },
+              "ContentHeaders": {
+                "$ref": "#/$defs/arrayOfKeyValuePairOfStringAndString"
+              },
+              "RawRequestDebuggingInfo": {
+                "type": "string"
+              }
+            },
+            "$defs": {
+              "arrayOfKeyValuePairOfStringAndString": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Key": {
+                      "$ref": "#/$defs/string"
+                    },
+                    "Value": {
+                      "$ref": "#/$defs/string"
+                    }
+                  }
+                }
+              },
+              "string": {
+                "type": "string",
+                "readOnly": true
+              }
+            }
+          },
+          "Out_JasonResponse": {
+            "type": "string"
+          },
+          "out_TokenJObject": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "out_AccessToken": {
+            "type": "string"
+          },
+          "out_AllUserIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "x-default-expression": "New List(Of String)"
+          },
+          "out_MfaEnforceResponse": {
+            "type": "string"
+          },
+          "out_MfaMethodsResponse": {
+            "type": "string"
+          },
+          "out_MfaMethodsJObject": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "out_SpResponseJson": {
+            "type": "string"
+          },
+          "out_SpJObject": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "out_ServicePrincipalId": {
+            "type": "string"
+          },
+          "out_AppRoleAssignmentsResponse": {
+            "type": "string"
+          },
+          "out_AppRoleAssignmentsJObject": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "out_RoleStatusMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "out_GroupStatusMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "out_MFAStatusMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "out_SSOStatusMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "dt_SSOReport": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "out_UpnToIdMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "lookupUserId": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "definitions": {
+          "job-attachment": {
+            "type": "object",
+            "properties": {
+              "ID": {
+                "type": "string",
+                "description": "Orchestrator attachment key"
+              },
+              "FullName": {
+                "type": "string",
+                "description": "File name"
+              },
+              "MimeType": {
+                "type": "string",
+                "description": "The MIME type of the content, such as \"application/json\" or \"image/png"
+              },
+              "Metadata": {
+                "type": "object",
+                "description": "Dictionary<string, string> of metadata",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "ID"
+            ],
+            "x-uipath-resource-kind": "JobAttachment"
+          }
+        }
+      }
+    }
+  ]
+}

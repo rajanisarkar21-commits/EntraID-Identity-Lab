@@ -1,0 +1,6 @@
+{
+  "Name": "EntraID_Identity_Lab",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}
