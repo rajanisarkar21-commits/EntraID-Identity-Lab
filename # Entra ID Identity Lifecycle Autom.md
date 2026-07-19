@@ -1,4 +1,4 @@
-# Entra ID Identity Lifecycle Automation (UiPath + Microsoft Graph API)
+README.md
 
 An end-to-end UiPath automation that manages the full identity lifecycle of users in Microsoft Entra ID (Azure AD) — provisioning, role assignment, group membership, MFA enforcement, and SSO app access — driven by a simple Excel config file, and fully idempotent (safe to re-run without creating duplicates).
 
